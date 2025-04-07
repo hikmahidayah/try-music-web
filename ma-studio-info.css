@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ICON DROPDOWN */
+  .dropdown-icon {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.dropdown-icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ffcc00; /* Warna emas */
+    border-radius: 2px;
+}
+
+.dropdown-menu {
+    display: none; /* Menu disembunyikan secara default */
+    flex-direction: column;
+    background-color: #331a00; /* Warna menu dropdown */
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #ffcc00; /* Warna teks */
+    padding: 8px 0;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ffcc00; 
+    color: #1a0000;
+
+}
+
+body {
+    font-family: jost;
+    margin: 0;
+    padding: 0;
+    background-color: #111; ;
+}
+
+.container {
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px; 
+    padding: 10px;
+    align-items: flex-start;
+}
+
+/*TEXT AND PARAGRAF*/
+.text-section {
+    /*flex: 2; */
+    text-align: left;
+    line-height: 1; 
+}
+h2 {
+    margin-top: 30px;
+    margin-left: 155px;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-weight: 100;
+    color: #f3c52b;
+}
+
+h1 {
+    width: 800px;
+    margin-left: 30px;
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-weight: 200;
+    color: #fff;
+    background-size: cover;
+  
+}
+p {
+    width: 700px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+    font-weight: light;
+    line-height: normal;
+    gap: 5px;
+
+}
+
+.image-section {
+    margin-top: 2vmax;
+    margin-left: 0;
+    width: 350px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.logo {
+    margin-top: 0;
+    margin-left: 150px;
+    width: 150px; 
+    height: auto;
+}
+
+.image {
+    margin-right: 25px;
+    margin-top: 7vmax;
+    background-position: cover;
+    max-width: 435px; 
+    border-radius: 8px; 
+}
+
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    margin-left: 65vmax;
+    margin-right: 1vmax;
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  .footer a {
+    color: #f3c52b;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }

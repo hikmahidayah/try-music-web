@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="stylesheet" href="ma.css">
+    
+    
+</head>
+<body>
+    <header class="navbar">
+        <div>
+        <img src="/Users/mac/Downloads/Try music web/logo music2.png"></img>
+        <a href="#image-container"></a>
+        </div>
+        <nav class="navbar">
+        <ul class="menu">
+            <li><a href="/Users/mac/Downloads/Try music web/music-cademy-studio Info.html">Studio Info</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Classes</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Music Tools</a></li>
+                    <li><a href="#">Orchestra Music</a></li>
+                    <li><a href="#">Modern Music</a></li>
+                    <li><a href="#">Classic Music</a></li>
+                    <li><a href="#">Singing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>  
+        </ul>
+        </nav>
+        <script src="ma.js"></script>
+    </header>
+    <div class="image-container">
+        <img src="/Users/mac/Downloads/Try music web/guru piano.jpeg" alt="placeholder">
+        <div class="text-overlay">
+            <h1 class="a">Music Lesson</h1>
+            <h1 class="b">For All Ages</h1>
+            <p class="p">…is dedicated to offering quality music<br>education, information, resources, and courses.</p>
+        </div>
+    </div>
+    <div class="sign-in-container">
+        <h2 class="signin-title">Keep Up To Date With The Studio</h2>
+        <form class="sign-in-form">
+            <input type="email" placeholder="username" required>
+            <input type="password" placeholder="password" required>
+            <button type="submit">Sign In</button>
+            </div>
+        </form>
+    </div> 
+    <div class="music-card">
+        <div class="album-covers">
+            <img src="/Users/mac/Downloads/Try music web/style.jpeg" alt="Cover 1" class="Cover cover-left">
+            <img src="/Users/mac/Downloads/Try music web/images 1.jpeg" alt="Cover 2" class="Cover cover-center">
+            <img src="/Users/mac/Downloads/Try music web/images 2.jpeg" alt="Cover 3" class="Cover cover-right">
+        </div>
+        <div class="box">
+            <h3>Modern Music</h3>
+            <div class="now-playing">
+                <span class="title">Sam Smith</span>
+                <div class="visualizer">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <button id="play-pause">
+                    <span class="material-icons" id="icon-play-pause">⏸️</span>
+                </button>
+            </div>
+        </div>
+        <audio id="audio" src="/Users/mac/Downloads/Try music web/Sam Smith - I'm Not The Only One (Official Music Video).mp3" loop></audio>
+    </div>
+
+    <audio id="background-music" loop></audio>
+
+    <script src="player-ma.js"></script>
+
+
+    <div class="container">
+        <div class="image-section">
+            <img src="/Users/mac/Downloads/Try music web/orchestra.png" alt="Concert Image">
+        </div>
+        <div class="text-section">
+            <h1 class="a">Professional</h1>
+            <h1 class="b">Learning</h1>
+            <p>
+                At the Music Academy, we are advocates for integrating music in education and believe this starts with empowering you first. 
+                Our Professional Learning opportunities are designed to enrich and elevate the classroom experience and equip you 
+                with the tools and resources to effectively teach concert material.
+            </p>
+            <button class="cta-button">Our Classes</button>
+            <script src="script.js"></script>
+        </div>
+    </div>
+    <div class="container-img">
+        <div class="image-box">
+            <img src="/Users/mac/Downloads/Try music web/music-tools.png" alt="Music Tools">
+            <p href="#" class="image-caption"><a>Music Tools</a></p>
+        </div>
+        <div class="image-box">
+            <img src="/Users/mac/Downloads/Try music web/classic.jpeg" alt="Classic">
+            <p href="#" class="image-caption"><a>Classic</a></p>
+        </div>
+        <div class="image-box">
+            <img src="/Users/mac/Downloads/Try music web/modern.jpeg" alt="Modern">
+            <p href="#" class="image-caption"><a>Modern</a></p>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <!-- Logo dan Program -->
+            <div class="footer-column">
+                <h3>Our Program</h3>
+                <ul>
+                    <li><a href="#">Music Tools</a></li>
+                    <li><a href="#">Orchestra Music</a></li>
+                    <li><a href="#">Modern Music</a></li>
+                    <li><a href="#">Classic Music</a></li>
+                    <li><a href="#">Singing</a></li>
+                </ul>
+            </div>
+
+            <!-- Get Started -->
+            <div class="footer-column">
+                <h3>Get Started</h3>
+                <ul>
+                    <li><a href="#">Beats</a></li>
+                    <li><a href="#">Chords</a></li>
+                    <li><a href="#">Notes</a></li>
+                    <li><a href="#">Instrument</a></li>
+                    <li><a href="#">Song Structure</a></li>
+                    <li><a href="#">The Staff</a></li>
+                    <li><a href="#">Accidentals</a></li>
+                    <li><a href="#">Scales</a></li>
+                    <li><a href="#">Interval</a></li>
+                    <li><a href="#">Keys</a></li>
+                    <li><a href="#">Clefs</a></li>
+                </ul>
+            </div>
+
+            <!-- Tools -->
+            <div class="footer-column">
+                <h3>Tools</h3>
+                <ul>    
+                    <li><a href="#">Instrument</a></li>
+                    <li><a href="#">Equipment</a></li>
+                    <li><a href="#">Finders</a></li>
+                    <li><a href="#">Other..</a></li>
+                </ul>
+            </div>
+
+            <!-- Seasons Class -->
+            <div class="footer-column">
+                <h3>Seasons Class</h3>
+                <ul>
+                    <li><a href="#">Autumn Colors</a></li>
+                    <li><a href="#">Winter Dream</a></li>
+                    <li><a href="#">Spring Frolic</a></li>
+                    <li><a href="#">Summer Fun</a></li>
+                </ul>
+            </div>
+
+            <!-- Links and Social Media -->
+            <div class="footer-column footer-right">
+                <ul>
+                    <li class="column-right"><a href="#">Privacy Policy</a></li>
+                    <li class="column-right"><a href="#">About Us</a></li>
+                    <li class="column-right"><a href="#">Maps</a></li>
+                    <li class="column-right"><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><img src="/Users/mac/Downloads/Try music web/facebook.png" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="/Users/mac/Downloads/Try music web/instagram.png" alt="Instagram"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="/Users/mac/Downloads/Try music web/twitter-x-icon.png" alt="Twitter"></a>
+                    <a href="https://youtube.com" target="_blank"><img src="/Users/mac/Downloads/Try music web/youtube.png" alt="YouTube"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="/Users/mac/Downloads/Try music web/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>Copyright © 2024 - <a href="#">Music Academy</a></p>
+        </div>
+    </footer>
+    
+    <script src="ma.js"></script>
+</body>
