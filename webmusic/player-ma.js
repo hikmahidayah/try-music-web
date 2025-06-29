@@ -1,13 +1,24 @@
-const audio = document.getElementById("audio");
-const playPauseBtn = document.getElementById("play-pause");
-const playPauseIcon = document.getElementById("icon-play-pause");
+const audio = document.getElementById("audio-player");
+  const playBtn = document.getElementById("play-btn");
+  const trackTitle = document.getElementById("track-title");
+  const waveform = document.getElementById("wave");
 
-playPauseBtn.addEventListener("click", () => {
-    if (audio.paused) {
-        audio.play();
-        playPauseIcon.textContent = "Pause";
+  let isPlaying = true;
+
+  playBtn.addEventListener("click", () => {
+    if (isPlaying) {
+      audio.pause();
+      playBtn.textContent = "▶️";
+      waveform.style.opacity = "0.5";
     } else {
-        audio.pause();
-        playPauseIcon.textContent = "Play";
+      audio.play();
+      playBtn.textContent = "⏸";
+      waveform.style.opacity = "1";
     }
-});
+    isPlaying = !isPlaying;
+  });
+
+  // Play audio saat halaman dimuat
+  window.onload = () => {
+    audio.play();
+  };
