@@ -213,22 +213,6 @@ button:hover {
 
 }
 
-
-/*Audio playlist*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Fira+Sans&display=swap');
-
-   /* body {
-      margin: 0;
-      background-color: #4a4551;
-      font-family: 'Fira Sans', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 1rem;
-    }*/
-
     .card {
       width: 320px;
       border-radius: 2rem 2rem 2rem 2rem;
