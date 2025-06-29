@@ -213,152 +213,84 @@ button:hover {
 
 }
 
-    .card {
-      width: 320px;
-      border-radius: 2rem 2rem 2rem 2rem;
-      overflow: hidden;
-      background: transparent;
-    }
+/*Background Music*/
+.music-card {
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+    background: #2d2b31;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .images img {
+    width: 32%;
+    margin: 0 1%;
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    background-color: #eee;
+    padding: 20px;
+    color: black;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .card-content h2 {
+    margin: 0 0 10px;
+  }
+  
+  .player {
+    background: #d4aa00;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .waveform {
+    font-size: 0.9em;
+    flex: 1;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+  
+  .pause {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .inactive {
+    margin-top: 10px;
+    font-size: 1em;
+  }
 
-    .images-container {
-      display: flex;
-      justify-content: center;
-      gap: -40px;
-      padding: 1.5rem 1.5rem 0 1.5rem;
-      position: relative;
-      z-index: 10;
-    }
+  @keyframes wave {
+    0%, 100% { letter-spacing: 1px; }
+    50% { letter-spacing: 3px; }
+  }
+  
+  .waveform {
+    animation: wave 1s infinite;
+    transition: opacity 0.3s;
+  }
 
-    .images-container img {
-      border-radius: 1rem;
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-      height: 140px;
-      width: 100px;
-      object-fit: cover;
-      position: relative;
-      z-index: 10;
-    }
-
-    .center-image-wrapper {
-      width: 140px;
-      height: 140px;
-      border-radius: 1rem;
-      overflow: hidden;
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-      position: relative;
-      z-index: 20;
-      margin: 0 -40px;
-    }
-
-    .center-image-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .play-button {
-      position: absolute;
-      inset: 0;
-      background: rgba(255, 255, 255, 0.4);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .play-button:hover {
-      background: rgba(255, 255, 255, 0.5);
-    }
-
-    .play-icon {
-      width: 56px;
-      height: 56px;
-      stroke: white;
-      filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
-    }
-
-    .title-container {
-      background-color: #d1d5db;
-      border-top-left-radius: 2rem;
-      border-top-right-radius: 2rem;
-      padding: 1rem 1.5rem 0.75rem 1.5rem;
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: black;
-      line-height: 1.2;
-    }
-
-    .audio-bar-container {
-      display: flex;
-      align-items: center;
-      background-color: #d9a72f;
-      padding: 0.5rem 1rem;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 1.125rem;
-      color: black;
-    }
-
-    .audio-bar-container span {
-      flex-shrink: 0;
-    }
-
-    .audio-waveform {
-      flex-grow: 1;
-      margin: 0 0.75rem;
-      height: 24px;
-      object-fit: contain;
-    }
-
-    .pause-button {
-      flex-shrink: 0;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: white;
-      user-select: none;
-      cursor: pointer;
-    }
-
-    .footer {
-      background-color: #161618;
-      border-bottom-left-radius: 2rem;
-      border-bottom-right-radius: 2rem;
-      padding: 0.75rem 1.5rem;
-      font-size: 1.25rem;
-      color: white;
-      font-weight: 400;
-    }
-
-    @media (max-width: 400px) {
-      .card {
-        width: 100%;
-        max-width: 320px;
-      }
-      .images-container img {
-        width: 80px;
-        height: 112px;
-      }
-      .center-image-wrapper {
-        width: 112px;
-        height: 112px;
-        margin: 0 -32px;
-      }
-      .title-container {
-        font-size: 1.25rem;
-      }
-      .audio-bar-container {
-        font-size: 1rem;
-      }
-      .footer {
-        font-size: 1rem;
-      }
-    }
-    
-
+  #switch-track {
+    margin-top: 10px;
+    background: black;
+    color: gold;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
 /* Background container 2 */
 .container {
     display: flex;

@@ -31,6 +31,26 @@ window.addEventListener('click', function (e){
     }
 })
 
+const switchBtn = document.getElementById("switch-track");
+let currentTrack = "beethoven";
+
+switchBtn.addEventListener("click", () => {
+  if (currentTrack === "beethoven") {
+    audio.src = "mozart.mp3";
+    trackTitle.textContent = "Mozart";
+    switchBtn.textContent = "Switch to Beethoven";
+    currentTrack = "mozart";
+  } else {
+    audio.src = "beethoven.mp3";
+    trackTitle.textContent = "Beethoven";
+    switchBtn.textContent = "Switch to Mozart";
+    currentTrack = "beethoven";
+  }
+  audio.play();
+  isPlaying = true;
+  playBtn.textContent = "⏸";
+  waveform.style.opacity = "1";
+});
 
 
 
