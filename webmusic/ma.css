@@ -214,8 +214,67 @@ button:hover {
 }
 
 /*Background Music*/
-
-
+.player-box {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+.play-btn, .pause-btn {
+font-size: 2rem;
+padding: 10px;
+border: none;
+background: transparent;
+cursor: pointer;
+margin: 5px;
+transition: all 0.2s;
+}
+.play-btn:hover, .pause-btn:hover {
+transform: scale(1.1);
+}
+.controls {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.volume-slider, .progress-bar {
+margin: 10px;
+width: 100%;
+}
+.song-name {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+.album-cover {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+.album-cover:hover {
+    transform: scale(1.05);
+}
+audio {
+    display: none;
+}
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
   
 /* Background container 2 */
 .container {
